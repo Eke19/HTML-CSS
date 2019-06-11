@@ -1,0 +1,52 @@
+fieldset {
+    margin-bottom: 40px;
+    border-top: 1px solid #888;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;  
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;    
+}
+
+.input-group {
+    border-top: 10px;
+    border-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;  
+}
+
+.input-group label {
+    font-weight: bold;
+    width: 200px;
+    display: inline-block;    
+}
+
+.input-group select {
+    width: 200px;
+    display: inline;    
+}
+
+.block-options label{
+    display: block;
+    padding-left: 50px;
+}
+
+.input-group [ type="url"]{
+    min-width: 320px;
+}
+
+.input-group [ type="email"]{
+    min-width: 320px;
+}
+
+.form-footer {
+    float: right;
+}

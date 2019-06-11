@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Celebrities quotes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Marck+Script|Questrial" rel="stylesheet" type="text/css"/>        
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/form.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+            </div>
+            <div id="site-title">
+                Celebrities quotes
+            </div>
+        </header>
+        <nav style="bottom: 622px;">
+            <ul>
+                <li>
+                    <a href="index.html">All celebrities</a>
+                </li>
+                <li>
+                    <a href="singers.html">Singers</a>
+                    <ul>
+                        <li>
+                            <a href="adele.html">Adele</a>
+                        </li>
+                        <li>
+                            <a href="jimi.html">Jimi Hendrix</a>
+                        </li>
+                        <li>
+                            <a href="bono.html">Bono</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="businessmen.html">Businessman</a>
+                    <ul>
+                        <li>
+                            <a href="steve.html">Steve Jobs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="actors.html">Actors</a>
+                    <ul>
+                        <li>
+                            <a href="deniro.html">Robert De Niro</a>
+                        </li>
+                        <li>
+                            <a href="drew.html">Drew Barrymore</a>
+                        </li>
+                        <li>
+                            <a href="jolie.html">Angelina Jolie</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="celeb-add-new">
+                    <a href="new-celeb.html"> Celeb-add-new </a>
+                </li>
+            </ul>
+
+        </nav>
+        <main>
+            <h1>New celebrity</h1>
+            <form id="new-celeb-form" action="">
+                <fieldset>
+                    <legend>Clebrity general info</legend>
+                    <div class="input-group">
+                        <label for="name">Clebrity Name</label>
+                        <input required type="text" name="celebrity_name" id="name">
+                        <!-- Ovde teba da se stavi obicno tekstualno polje pod nazivom "celebrity_name" koje je obavezno!!! -->
+                    </div>
+                    <div class="input-group">
+                        <label>Date of birth</label>
+                        <input required type="text" name="celebrty_date_of_birth" id="date">
+                        <!-- Ovde teba da se stavi obicno tekstualno polje pod nazivom "celebrty_date_of_birth" koje je obavezno!!! -->
+                    </div>
+                    <div class="input-group">
+                        <label>Date of death</label>
+                        <input type="text" name="celebrty_date_of_death" id="date">
+                        <!-- Ovde teba da se stavi tekstualno polje  za unos datuma pod nazivom "celebrty_date_of_death" koje nije obavezno!!! -->
+
+                    </div>
+                    <div class="input-group">
+                        <label>Photo Url</label>
+                        <input type="text" name="celebrty_photo_url" id="ddeath">
+                        <!-- Ovde teba da se stavi tekstualno polje za unos url-a pod nazivom "celebrty_photo_url" koje nije obavezno!!! -->
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Celebrity resume</legend>
+                    <textarea name="celebrity_resume" id="textar2"></textarea>
+                    <!-- Ovde teba da se stavi tekstualno polje veceg teksta u vise linija pod nazivom "celebrity_resume" koje je obavezno!!! -->
+
+                </fieldset>
+                <fieldset>
+                    <legend>Celebrity quote</legend>
+                    <textarea required name="celebrity_quote" id="textar1"></textarea>
+                    <!-- Ovde teba da se stavi tekstualno polje veceg teksta u vise linija pod nazivom "celebrity_quote" koje je obavezno!!! -->
+
+                </fieldset>
+                <fieldset>
+                    <legend>Celebrity settings</legend>
+                    <div class="input-group">
+                        <label>Category</label>                                            
+                        <select name="category" id="category">
+                            <option value="singer">Singer</option>
+                            <option value="businessman">Businessman</option>
+                            <option value="politician">Politician</option>
+                            <option value="actor">Actor</option>                                    
+                        </select>
+                        <!-- 
+                                Ovde treba da doje polje u kome se vrsi izbor jedne opcije. 
+                                Opcije su prikazane u padajucoj listi
+                                Poljle je pod nazivom "celebrity_category"
+                                Opcije su sledece
+                                        vrednost "singer" labela "Singer"
+                                        vrednost "businessman" labela "Businessman"
+                                        vrednost "politician" labela "Politician"
+                                        vrednost "actor" labela "Actor" - Ova opcija je preselektovana!!!
+                        -->
+                    </div>
+                    <div class="input-group">
+
+                        <div class="inline-options">
+                            <label>Status</label>
+                            <input checked="" type="radio" value="active" name="stat">
+                            <label>Active</label>
+
+                            <input checked="" type="radio" value="disabled" name="stat">
+                            <label>Disabled</label>
+                            <!--
+                                    Ovde treba da se prikazu polja za izbor JEDNE vrednosti
+                                    Opcije su prikazane jedna za drugom
+                                    Polje ima naziv "celebrity_status"
+                                    Opcije koje se nude su
+                                    
+                                            vrednost "active" labela "Active" - ovo polje je preselektovano!
+                                            vrednost "disabled" labela "Disabled"
+                            -->
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Related celebrities</label>
+                        <div class="block-options">
+
+                            <label>    
+                                <input type="checkbox" name="related_celebrities[]" value="1">Robert De Niro
+                            </label>
+                            <label>    
+                                <input type="checkbox" name="related_celebrities[]" value="2">Adele
+                            </label>
+                            <label>    
+                                <input type="checkbox" name="related_celebrities[]" value="3">Jimi Hendrix
+                            </label>
+                            <label>    
+                                <input type="checkbox" name="related_celebrities[]" value="4">Steve Jobs
+                            </label>
+                            <label>    
+                                <input type="checkbox" name="related_celebrities[]" value="5">Angelina Jolie
+                            </label>
+
+                            <!--
+                                    Ovde treba da se prikazu polja za izbor VISE vrednosti
+                                    Opcije su prikazane jedna za drugom
+                                    Polje ima naziv "related_celebrities"
+                                    Opcije koje se nude su
+                                    
+                                            vrednost "1" labela "Robert De Niro"
+                                            vrednost "2" labela "Adele"
+                                            vrednost "3" labela "Jimi Hendrix"
+                                            vrednost "4" labela "Steve Jobs"
+                                            vrednost "5" labela "Angelina Jolie"
+                            -->
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form-footer">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Save Celebrity</button>
+                </fieldset>
+            </form>
+        </main>
+        <aside>
+            <h2>Quote of the day</h2>
+            <blockquote>
+                You can't blame gravity for falling in love. 
+            </blockquote>
+            <p><small>Albert Einstein</small></p>
+        </aside>
+        <footer>
+            &copy; Celebrities quotes 2017
+        </footer>
+    </body>
+</html>
